@@ -1,5 +1,4 @@
 :set number
-:set number
 :set relativenumber
 :set autoindent
 :set tabstop=4
@@ -25,7 +24,6 @@ Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
 Plug 'https://github.com/tpope/vim-fugitive' " Git fugitive
 
 call plug#end()
-
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
