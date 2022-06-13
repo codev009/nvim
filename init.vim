@@ -25,6 +25,7 @@ Plug 'https://github.com/tpope/vim-fugitive' " Git fugitive
 Plug 'https://github.com/mattn/emmet-vim' " Emmet
 Plug 'https://github.com/eslint/eslint' " ESLint
 Plug 'https://github.com/dense-analysis/ale' " ALE for completion
+Plug 'https://github.com/turbio/bracey.vim' " Bracey for live edits
 call plug#end()
 
 nnoremap <C-f> :NERDTreeFocus<CR>
