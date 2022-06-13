@@ -24,8 +24,7 @@ Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
 Plug 'https://github.com/tpope/vim-fugitive' " Git fugitive
 Plug 'https://github.com/mattn/emmet-vim' " Emmet
 Plug 'https://github.com/eslint/eslint' " ESLint
-Plug 'https://github.com/ycm-core/YouCompleteMe' " YouCompleteMe
-
+Plug 'https://github.com/dense-analysis/ale' " ALE for completion
 call plug#end()
 
 nnoremap <C-f> :NERDTreeFocus<CR>
