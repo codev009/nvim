@@ -157,5 +157,3 @@ inoremap <silent><c-t> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-y>"
 
 setlocal commentstring={%\ comment\ %}%s{%\ endcomment\ %}
-
-let b:undo_ftplugin .= 'setl cms< | unlet! b:browsefilter b:match_words'
