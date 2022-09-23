@@ -1,0 +1,38 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "html",
+    "javascript",
+    "json",
+    "react",
+    "tsx",
+    "typescript",
+    "xml",
+    "yaml",
+    "yml",
+    "jsx",
+    "graphql",
+    "lua",
+    "scss",
+    "tailwindcss",
+    "alpinejs",
+	"jsx"
+  ],
+  "Lua.telemetry.enable": true,
+
+  "languageserver": {
+    "liquid": {
+      "command": "theme-check-language-server",
+      "filetypes": ["liquid"],
+      "settings": {
+        "themeCheck": {
+          "checkOnOpen": true,
+          "checkOnChange": true,
+          "checkOnSave": true
+        }
+      },
+      "rootPatterns": [".theme-check.yml"]
+    }
+  }
+}
