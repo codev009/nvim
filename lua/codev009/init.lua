@@ -94,4 +94,4 @@ require 'cmp'.setup {
 }
 
 -- for bufferline
-vim.opt.termguicolors = true
+vim.opt.termguicolors = false
