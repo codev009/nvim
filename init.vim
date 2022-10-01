@@ -65,7 +65,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'	" indent-blankline
 Plug 'folke/lsp-colors.nvim' " lsp colors
 Plug 'folke/trouble.nvim' " trouble
 Plug 'tpope/vim-liquid' " shopify liquid support
-
+Plug 'metakirby5/codi.vim' " codi for vim like Quokka
 call plug#end()
 
 " require plugin configs
@@ -156,4 +156,5 @@ inoremap <silent><c-t> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
 " Set coc tab completion
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-y>"
 
+" liquid commentstring
 setlocal commentstring={%\ comment\ %}%s{%\ endcomment\ %}
