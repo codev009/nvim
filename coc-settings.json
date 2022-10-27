@@ -17,9 +17,11 @@
     "scss",
     "tailwindcss",
     "alpinejs",
-	"jsx"
+    "jsx"
   ],
   "Lua.telemetry.enable": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
 
   "languageserver": {
     "liquid": {

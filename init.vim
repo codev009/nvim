@@ -18,7 +18,10 @@
 " nvim-cmp default setup
 set completeopt=menu,menuone,noselect
 
-set nocompatible
+" for vimwiki
+filetype plugin on
+
+set nocompatible 
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -35,18 +38,17 @@ Plug 'https://github.com/github/copilot.vim' " copilot
 Plug 'hail2u/vim-css3-syntax'	" CSS3 syntax
 Plug 'turbio/bracey.vim' " Bracey
 Plug 'tpope/vim-eunuch' " Eunuch (vim-eunuch) use mkdir etc. inside vim
-Plug 'ray-x/lsp_signature.nvim' " LSP Signature
-Plug 'morhetz/gruvbox' " theme
+Plug 'morhetz/gruvbox' " theme gruvbox
 Plug 'AndrewRadev/tagalong.vim' " auto rename tag
 Plug 'nvim-lua/plenary.nvim' " plenary as a dependency for telescope
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " telescope
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " treesitter
 Plug 'mlaursen/vim-react-snippets' " react snippets
 Plug 'junegunn/gv.vim' " to show git commit messages
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} " toggle terminal
 Plug 'flazz/vim-colorschemes' " colorschemes
 Plug 'nvim-lualine/lualine.nvim' " lualine for vim
-Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
+Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' } " lspsaga for vim
 Plug 'lewis6991/gitsigns.nvim' " git signs
 Plug 'norcalli/nvim-colorizer.lua' " colorizer for vim
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' } " bufferline in lua
@@ -58,14 +60,15 @@ Plug 'hrsh7th/cmp-cmdline' " cmp cmdline
 Plug 'hrsh7th/nvim-cmp' " cmp
 Plug 'sbdchd/neoformat' " formatting for vim
 Plug 'williamboman/mason.nvim' " mason for vim
-Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'williamboman/mason-lspconfig.nvim' " mason lspconfig for vim
 Plug 'neovim/nvim-lspconfig' " LSP
 Plug 'p00f/nvim-ts-rainbow' " rainbow 
 Plug 'lukas-reineke/indent-blankline.nvim'	" indent-blankline
 Plug 'folke/lsp-colors.nvim' " lsp colors
-Plug 'folke/trouble.nvim' " trouble
+Plug 'folke/trouble.nvim' " trouble for checking errors
 Plug 'tpope/vim-liquid' " shopify liquid support
 Plug 'metakirby5/codi.vim' " codi for vim like Quokka
+
 call plug#end()
 
 " require plugin configs
@@ -73,13 +76,13 @@ lua require('codev009')
 
 " Load the colorscheme
 set background=dark
+
 colorscheme gruvbox
 
 inoremap <c-a> <ESC>:Lex<cr>:vertical resize 30<cr>
 nnoremap <c-a> <ESC>:Lex<cr>:vertical resize 30<cr>
 
 :nmap <space>e <Cmd>CocCommand explorer<CR>
-
 
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
